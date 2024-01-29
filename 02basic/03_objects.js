@@ -21,18 +21,21 @@ const jsUser = {
 
 }
 
-console.log(jsUser.email)
-console.log(jsUser["email"])
-console.log(jsUser["full name"]);//we don't acess the full name from '.'
-console.log(jsUser[mySym]);// isme ese hi Acess kar sakte h
+// console.log(jsUser.email)
+// console.log(jsUser["email"])
+// console.log(jsUser["full name"]);//we don't acess the full name from '.'
+// console.log(jsUser[mySym]);// isme ese hi Acess kar sakte h
 jsUser.email ="ramesgpoou@200"
-Object.freeze(jsUser)
-jsUser.email= "fyrhfhfxxfbcfg@55"// object is free we can't overrie the email
-console.log(jsUser);
+//Object.freeze(jsUser)
+//jsUser.email= "fyrhfhfxxfbcfg@55"// object is free we can't overrie the email
+//console.log(jsUser);
 
 jsUser.greeting = function() {
     console.log("hello js user");
 }
-
-console.log(jsUser.gr);
+jsUser.greetingtwo = function() {
+    console.log(`hello js user,${thos.name}`);
+}
+console.log(jsUser.greeting());
+console.log(jsUser.greetingtwo());
 
