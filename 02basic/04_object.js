@@ -53,6 +53,24 @@ console.log(obj3);
 // user[1].email;
 
 
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));//datatype of keys is array
+//console.log(Object.keys(tinderUser));//datatype of keys is array
+
+
+//======
+
+// destructring
+const course ={
+  coursename : "js in hindi",
+  price :"999",
+  courseinstructor : "hitesh"
+}
+//course.courseinstructor
+
+const { courseinstructor:instructor} =course
+
+//console.log(courseinstructor);
+console.log(instructor);
+
+
